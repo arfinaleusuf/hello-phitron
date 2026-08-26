@@ -4,7 +4,7 @@ import Count from "./Count";
 const Counter = () => {
     const [counter, setCounter] = useState(0)
 
-    console.log(counter, "counter")
+    // console.log(counter, "counter")
 
     const counterHandler =  () =>{
         setCounter((prevCounter) => prevCounter + 1)
