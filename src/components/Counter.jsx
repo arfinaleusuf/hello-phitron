@@ -1,11 +1,21 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Count from "./Count";
 
 const Counter = () => {
     const [counter, setCounter] = useState(0)
     const[width, setWidth] = useState(0)
 
-    // console.log(counter, "counter")
+    // const [randerCount, setRanderCount] = useState(0)
+
+    const randerCount = useRef(0);
+    const inRef = useRef(null)
+
+    useEffect(()=> {
+        // setRanderCount((prev)=> prev+1);
+        randerCount.current = randerCount.current + 1
+    });
+
+    console.log(randerCount.current, "randerCount");
 
     useEffect(()=> {
         document.title = `counter: ${counter}`
@@ -28,12 +38,21 @@ const Counter = () => {
         setCounter((prevCounter) => prevCounter + 1)
         setCounter((prevCounter) => prevCounter + 1)
     }
+
+    const handleBtnClick = () =>{
+        // console.log(inRef.current.value);
+        inRef.current.focus()
+    }
     return (
         <div className="counter">
+            <h2>rander count: {randerCount.current}</h2>
             <Count counter={counter} setCounter={setCounter}/>
             <button onClick={()=> counterHandler()} className="increment-btn">Increment</button>
 
             <h2>monitor width: {width}</h2>
+
+            <input ref={inRef} type="text" />
+            <button onClick={handleBtnClick}>Click</button>
         </div>
     );
 };

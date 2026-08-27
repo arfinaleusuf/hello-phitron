@@ -26,9 +26,9 @@ const Users = () => {
             <button onClick={()=> setCounter(prev => prev+1)}>Increse</button> */}
 
             {isLoading ? <h2>Loading...</h2> : <div className='user-cart-parent'>
-                {users.map(user => {
+                {users.map((user, ind)=> {
                     return (
-                        <div className='user-cart'>
+                        <div className='user-cart' key={ind}>
                             <h2>{user.name}</h2>
                             <h2>{user.username}</h2>
                             <h2>{user.email}</h2>
