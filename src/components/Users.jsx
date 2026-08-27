@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import SelectedUsers from './SelectedUsers';
+import UserCart from './UserCart';
 
 const Users = () => {
 
@@ -24,16 +26,10 @@ const Users = () => {
 
             {/* <h2>{counter}</h2>
             <button onClick={()=> setCounter(prev => prev+1)}>Increse</button> */}
-
+            <SelectedUsers/>
             {isLoading ? <h2>Loading...</h2> : <div className='user-cart-parent'>
                 {users.map((user, ind)=> {
-                    return (
-                        <div className='user-cart' key={ind}>
-                            <h2>{user.name}</h2>
-                            <h2>{user.username}</h2>
-                            <h2>{user.email}</h2>
-                        </div>
-                    );
+                    return <UserCart user={user} key={ind}/>
                 })}
             </div>}
         </div>

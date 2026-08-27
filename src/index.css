@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .counter {
   background: orange;
   color: white;
@@ -56,7 +62,8 @@
   margin: 70px auto;
   padding: 10px 20px;
 }
-.user-cart-parent{
+
+.user-cart-parent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
@@ -65,10 +72,20 @@
 .user-cart {
   background: pink;
   color: black;
-  font-size: 20px;
+  font-size: 25px;
   border: 2px solid white;
   border-radius: 5px;
   width: 100%;
+  padding: 10px 20px;
+}
+
+.selected-user-parent {
+  background: black;
+  color: white;
+  font-size: 25px;
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 90%;
   margin: 70px auto;
   padding: 10px 20px;
 }
