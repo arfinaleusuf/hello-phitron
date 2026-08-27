@@ -10,8 +10,8 @@ const Counter = () => {
     useEffect(()=> {
         document.title = `counter: ${counter}`
         localStorage.setItem("useEffect", "Use effect treggerd")
-        console.log("from inside useEffect")
-        console.log(window.innerWidth);
+        // console.log("from inside useEffect")
+        // console.log(window.innerWidth);
         
         window.addEventListener("resize", ()=> {
             setWidth(window.innerWidth);
@@ -19,7 +19,7 @@ const Counter = () => {
     }, [counter]);
 
     useEffect(()=> {
-        console.log(" Use effect Empty dependency array");
+        // console.log(" Use effect Empty dependency array");
         // load data from api
     }, []);
 

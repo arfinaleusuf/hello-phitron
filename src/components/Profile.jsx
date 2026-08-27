@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Profile = () => {
     const [user, setUser] = useState({name: 'arfin', age: 21, location: 'Dhaka'})
 
-    console.log(user, "user");
+    // console.log(user, "user");
 
     const handleAge = () =>{
 

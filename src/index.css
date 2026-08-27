@@ -1,4 +1,4 @@
-.counter{
+.counter {
   background: orange;
   color: white;
   font-size: 35px;
@@ -11,13 +11,13 @@
   text-align: center;
 }
 
-.increment-btn{
+.increment-btn {
   background-color: green;
   color: white;
   font-size: 25px;
 }
 
-.profile{
+.profile {
   background-color: purple;
   color: white;
   font-size: 25px;
@@ -28,7 +28,7 @@
   padding: 10px 20px;
 }
 
-.shoping-list{
+.shoping-list {
   background-color: blue;
   color: white;
   font-size: 25px;
@@ -39,9 +39,36 @@
   padding: 10px 20px;
 }
 
-.item-parent{
+.item-parent {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+}
+
+.users {
+  background: black;
+  color: white;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 90%;
+  margin: 70px auto;
+  padding: 10px 20px;
+}
+.user-cart-parent{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.user-cart {
+  background: pink;
+  color: black;
+  font-size: 20px;
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 100%;
+  margin: 70px auto;
+  padding: 10px 20px;
 }
