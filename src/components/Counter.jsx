@@ -8,13 +8,20 @@ const Counter = () => {
     // console.log(counter, "counter")
 
     useEffect(()=> {
-        document.title = "counter"
+        document.title = `counter: ${counter}`
         localStorage.setItem("useEffect", "Use effect treggerd")
+        console.log("from inside useEffect")
+        console.log(window.innerWidth);
         
         window.addEventListener("resize", ()=> {
             setWidth(window.innerWidth);
-        })
-    })
+        });
+    }, [counter]);
+
+    useEffect(()=> {
+        console.log(" Use effect Empty dependency array");
+        // load data from api
+    }, []);
 
     const counterHandler =  () =>{
         setCounter((prevCounter) => prevCounter + 1)
