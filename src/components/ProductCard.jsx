@@ -19,7 +19,8 @@ const ProductCard = ({ product, cart, setCart }) => {
   };
 
   const removeFromCart = ()=> {
-    
+    const newCart = cart.filter(pd => pd.id !== product.id);
+    setCart(newCart);
   }
 
   console.log(cart, "cart from product card");
