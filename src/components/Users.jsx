@@ -20,7 +20,7 @@ const Users = () => {
             })
     }, [])
 
-    console.log(users, isLoading);
+    // console.log(users, isLoading);
 
     return (
         <div className='users'>

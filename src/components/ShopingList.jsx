@@ -4,7 +4,7 @@ const ShopingList = () => {
     const [todo, setTodo] = useState(["milk", "Soap", "Body Spray", "Light", "potato"])
     
     const handleRemoveItem = (item) =>{
-        console.log(item);
+        // console.log(item);
         const newTodoList = todo.filter(todoItems => todoItems != item)
 
         setTodo(newTodoList)

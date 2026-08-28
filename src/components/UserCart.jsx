@@ -8,7 +8,7 @@ const UserCart = ({ user , selectedUsers, setSelectedUsers}) => {
     const handleUserClick = () => {
         setSelectedUsers([...selectedUsers, user])
     }
-    console.log(selectedUsers, "selectedUsers")
+    // console.log(selectedUsers, "selectedUsers")
     return (
         <div>
             <div className='user-cart' onClick={handleUserClick}>

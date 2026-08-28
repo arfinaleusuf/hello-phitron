@@ -486,7 +486,6 @@ body {
   opacity: 0.72;
   margin: 0 0 18px;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }

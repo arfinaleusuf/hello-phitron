@@ -15,7 +15,7 @@ const Counter = () => {
         randerCount.current = randerCount.current + 1
     });
 
-    console.log(randerCount.current, "randerCount");
+    // console.log(randerCount.current, "randerCount");
 
     useEffect(()=> {
         document.title = `counter: ${counter}`
