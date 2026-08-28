@@ -28,7 +28,8 @@ const Users = () => {
 
             {/* <h2>{counter}</h2>
             <button onClick={()=> setCounter(prev => prev+1)}>Increse</button> */}
-            <SelectedUsers/>
+            <SelectedUsers selectedUsers={selectedUsers}/>
+
             {isLoading ? <h2>Loading...</h2> : <div className='user-cart-parent'>
                 {users.map((user, ind)=> {
                     return <UserCart user={user} key={ind} selectedUsers = {selectedUsers} setSelectedUsers={setSelectedUsers}/>
