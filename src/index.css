@@ -72,7 +72,7 @@
 .user-cart {
   background: pink;
   color: black;
-  font-size: 25px;
+  font-size: 15px;
   border: 2px solid white;
   border-radius: 5px;
   width: 100%;
@@ -82,7 +82,7 @@
 .selected-user-parent {
   background: black;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   border: 2px solid white;
   border-radius: 5px;
   width: 90%;

@@ -6,6 +6,8 @@ const Users = () => {
 
     const [users, setUsers] = useState([]);
     const [isLoading, setIsLoading] = useState(true)
+    const [selectedUsers, setSelectedUsers] = useState([])
+
 
     const [counter, setCounter] = useState(0)
 
@@ -29,7 +31,7 @@ const Users = () => {
             <SelectedUsers/>
             {isLoading ? <h2>Loading...</h2> : <div className='user-cart-parent'>
                 {users.map((user, ind)=> {
-                    return <UserCart user={user} key={ind}/>
+                    return <UserCart user={user} key={ind} selectedUsers = {selectedUsers} setSelectedUsers={setSelectedUsers}/>
                 })}
             </div>}
         </div>
